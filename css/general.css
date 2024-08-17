@@ -1,0 +1,60 @@
+BODY {
+    background-color: rgb(243, 237, 222);
+    background-image: url(photos/grain.png);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    font-family: 'Inconsolata', monospace;
+    margin-top: 40px;
+}
+
+SECTION {
+    /* border: 1px solid pink; */
+    height: 580px;
+    padding-top: 100px;
+}
+
+HTML {
+    scroll-behavior: smooth;
+}
+
+.section-heading {
+    margin-left: 160px;
+    font-weight: bolder;
+    color: rgb(157, 76, 51);
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn-links {
+    align-self: center;
+    background-color: rgb(156, 76, 51);
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: no-repeat;
+    background-size: 4px 3px;
+    border-radius: 12px; 
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: rgb(221, 207, 203);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1; 
+    outline: none;
+    padding: 10px 20px; 
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border: 2px solid black; 
+    text-align: center; 
+    vertical-align: middle; 
+}
+  
+.btn-links:hover {
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+transform: translate3d(0, 2px, 0);
+}
+
+.btn-links:focus {
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

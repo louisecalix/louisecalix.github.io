@@ -1,0 +1,106 @@
+#contact {
+    height: 700px;
+}
+
+.contact-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    height: 500px;
+    margin-left: 80px;
+    margin-right: 160px;
+    /* margin-bottom: 150px; */
+    padding-right: 160px;
+    padding-left: 90px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.left-contact{
+    /* border: 1px solid pink; */
+    flex: 40%;
+}
+.right-contact{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+    height: 450px;
+    border-width: 4px 2px 3px 3px;
+    border-top-left-radius: 0.22% 275px ;
+    border-top-right-radius: 300px 0.7%;
+    border-bottom-right-radius: 0.3% 355px;
+    border-bottom-left-radius: 360px 2%;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+#contact-header {
+    border-bottom: 2px solid black;
+    flex: 20%;
+    padding-left: 170px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.contact-wrapper {
+    flex: 10%;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    /* height: 50px; */
+}
+
+.contactmessage-wrapper {
+    flex: 30%;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#contact-button {
+    flex: 20%;
+}
+
+.contact-label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(205, 99, 67, 0.203);
+    height: 35px;
+    font-size: 18px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+#message {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(205, 99, 67, 0.203);
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+}
+
+.button-contact {
+    padding-left: 52px;
+    padding-bottom: 20px;
+}
+
+#contact-picture {
+    height: 85%;
+    padding-top: 10px;
+}
