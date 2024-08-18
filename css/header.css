@@ -15,13 +15,14 @@ HEADER {
 }
 
 .left-side {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 800;
     margin-left: 160px;
     /* border: 1px solid pink; */
     padding: 10px;
     text-decoration: none;
-    color: #000000;
+    color:rgb(205, 100, 67);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .right-side {

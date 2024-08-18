@@ -1,0 +1,75 @@
+#skills {
+    /* border: 1px solid black; */
+}
+
+.skill-container {
+    /* border: 2px solid pink; */
+    height: 370px;
+    display: block;
+    margin-left: 160px;
+    margin-right: 160px;
+
+}
+
+.upperskill {
+    /* border: 1px solid blue; */
+    height: 50%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.lowerskill {
+    /* border: 3px solid green; */
+    height: 50%;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.circle {
+    align-self: center;
+    background-color: rgba(205, 99, 67, 0.116);
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 23px;
+    outline: none;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 2px solid black;
+    height: 150px;
+    width: 250px;
+  }
+  
+  .circle:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  .circle:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+  
