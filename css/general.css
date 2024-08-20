@@ -1,60 +1,101 @@
-BODY {
-    background-color: rgb(243, 237, 222);
-    background-image: url(photos/grain.png);
-    background-size: cover;
-    /* background-blend-mode: multiply; */
-    font-family: 'Inconsolata', monospace;
-    margin-top: 40px;
-}
-
-SECTION {
-    /* border: 1px solid pink; */
-    height: 580px;
-    padding-top: 100px;
-}
-
 HTML {
     scroll-behavior: smooth;
 }
 
-.section-heading {
-    margin-left: 160px;
-    font-weight: bolder;
-    color: rgb(157, 76, 51);
-    font-size: 30px;
+
+MAIN {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+BODY, A, LI, UL {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    text-decoration: none;
     font-family: 'Inconsolata', monospace;
 }
 
-.btn-links {
-    align-self: center;
-    background-color: rgb(156, 76, 51);
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: no-repeat;
-    background-size: 4px 3px;
-    border-radius: 12px; 
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: rgb(221, 207, 203);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1; 
-    outline: none;
-    padding: 10px 20px; 
-    text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border: 2px solid black; 
-    text-align: center; 
-    vertical-align: middle; 
-}
-  
-.btn-links:hover {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-transform: translate3d(0, 2px, 0);
+BODY {
+    background-color: rgb(243, 237, 222);
 }
 
-.btn-links:focus {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* border: 2px solid rgba(255, 0, 0, 0.305); */
+}
+
+.section-heading {
+    font-weight: bolder;
+    color: rgb(157, 76, 51);
+    font-size: 22px;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+
+@media screen and (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+    BODY {
+        background-color: rgb(243, 237, 222);
+        background-size: cover;
+        font-family: 'Inconsolata', monospace;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .section-heading {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .section-heading {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .container {
+        max-width: 1540px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
 }

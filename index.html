@@ -3,46 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ayheca.</title>
-
-    <link rel="icon" type="image/jpg" href="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894151/bg_helqwp.png">
+    <title>ayheca</title>
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/projects.css">
+    <!-- <link rel="stylesheet" href="css/skills.css"> -->
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/skills.css">
+
+
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet"></head>
 
+</head>
 <body>
-    <header>
-        <a href="#home" class="left-side">ayheca.</a>
-        <div class="right-side">
-            <a href="#home" class="nav-button">home</a>
-            <a href="#about" class="nav-button">about</a>
-            <a href="#projects" class="nav-button">projects</a>
-            <a href="#skills" class="nav-button">skills</a>
-            <a href="#contact" class="nav-button">contact</a>
-        </div>
-    </header>
-
-    <section id="home">
-        <div class="intro-content">
-            <div class="left-intro">
-                <div class="h1-intro-title-container">
-                    <h1 class="intro-title-header">
-                        Hi, my name is <span id="name">ayheca.</span> 
-                    </h1>
+    <main>
+        <section class="header container">
+            <header class="header-container">
+                <div class="logo-side">
+                    <a href="#home">ayheca.</a>
                 </div>
+                <div class="nav-side">
+                    <a href="#home" class="nav-button">home</a>
+                    <a href="#about" class="nav-button">about</a>
+                    <a href="#projects" class="nav-button">projects</a>
+                    <a href="#skills" class="nav-button">skills</a>
+                    <a href="#contact" class="nav-button">contact</a>
+                </div>
+            </header>
+        </section>
+        <section id="home" class="home container">
+            <div class="intro-content">
+                <div class="left-intro">
+                    <div class="h1-intro-title-container">
+                        <h1 class="intro-title-header">
+                            Hi, my name is <span id="name">ayheca.</span> 
+                        </h1>
+                    </div>
+    
+                    <div class="intro-actions">
+                        <a href="#resume" class="btn-resume">resume</a>
+                        <ul class="links-container">
+                            <li>
+                                <a href="https://github.com/louisecalix" class="btn-links" target="_blank">G</a>
+                                <a href="https://github.com/louisecalix" class="btn-links" target="_blank">LI</a>
+                                <a href="https://github.com/louisecalix" class="btn-links" target="_blank">In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-intro">
+                    <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894151/bg_helqwp.png" id="intro-photo">
+                </div>
+            </div>
+        </section>
 
-                <div class="intro-actions">
-                    <a href="#resume" class="btn-resume">resume</a>
+
+        <section id="about" class="about container">
+            <div class="section-heading">
+                <h1>about me</h1>
+            </div>
+    
+            <div class="info-container">
+                <div class="info-top">
+                    <h3>ayheca louise c. de jesus</h3>
+                </div>
+                <div class="info-middle">
+                    <p>
+                        A Computer Science Student
+                        aaaaaa aaaaa aaaaaa aaaaaaa aaaaaaaaaa aaaaaa aaaaaaaa aaaaa</p>
+                </div>
+                <div class="info-bottom">
                     <ul class="links-container">
                         <li>
                             <a href="https://github.com/louisecalix" class="btn-links" target="_blank">G</a>
@@ -52,141 +89,119 @@
                     </ul>
                 </div>
             </div>
-            <div class="right-intro">
-                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894151/bg_helqwp.png" id="intro-photo">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about">
-        <div class="section-heading">
-            <h1>about me</h1>
-        </div>
 
-        <div class="info-container">
-            <div class="info-top">
-                <h3>ayheca louise c. de jesus</h3>
+        <section id="projects" class="project container">
+            <div class="section-heading">
+                <h1>projects</h1>
             </div>
-            <div class="info-middle"></div>
-            <div class="info-bottom">
-                <ul class="links-container">
-                    <li>
-                        <a href="https://github.com/louisecalix" class="btn-links" target="_blank">G</a>
-                        <a href="https://github.com/louisecalix" class="btn-links" target="_blank">LI</a>
-                        <a href="https://github.com/louisecalix" class="btn-links" target="_blank">In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-heading">
-            <h1>projects</h1>
-        </div>
-
-        <div class="projects-container">
-            <div class="preview-wrapper">
-                <div class="title-preview">
-                    <div class="sirkol1"></div>
-                    <div class="sirkol1"></div>
-                    <div class="title">trackwatch</div>
-                </div>
-                <div class="info-preview"></div>
-                <div class="button-preview">
-                    <a href="https://github.com/louisecalix/trackwatch" class="btn-resume">github</a>
-                </div>
-            </div>
-            <div class="preview-wrapper">
-                <div class="title-preview">
-                    <div class="sirkol1"></div>
-                    <div class="sirkol1"></div>
-                    <div class="title">banking_system</div>
-                </div>
-                <div class="info-preview"></div>
-                <div class="button-preview">
-                    <a href="https://github.com/louisecalix/banking_system" class="btn-resume">github</a>
-                </div>
-            </div>
-            <div class="preview-wrapper">
-                <div class="title-preview">
-                    <div class="sirkol1"></div>
-                    <div class="sirkol1"></div>
-                    <div class="title">portfolio</div>
-                </div>
-                <div class="info-preview"></div>
-                <div class="button-preview">
-                    <a href="https://github.com/louisecalix/louisecalix.github.io" class="btn-resume">github</a>
-                </div>
-            </div>
-            <div class="preview-wrapper">
-                <div class="title-preview">
-                    <div class="sirkol1"></div>
-                    <div class="sirkol1"></div>
-                    <div class="title">trackwatch</div>
-                </div>
-                <div class="info-preview"></div>
-                <div class="button-preview">
-                    <a href="https://github.com/louisecalix/trackwatch" class="btn-resume">github</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-heading">
-            <h1>skills</h1>
-        </div>
-
-        <div class="skill-container">
-            <div class="upperskill">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-            <div class="lowerskill">
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <div class="section-heading">
-            <h1>contact</h1>
-        </div>
-
-        <div class="contact-container">
-            <div class="left-contact">
-                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894175/contact_bzkrj7.png" id="contact-picture">
-            </div>
-            <div class="right-contact">
-                <div id="contact-header">
-                    <h1>get in touch</h1></div>
-                <div class="contact-wrapper">
-                    <div class="contact-label">
-                        <input type="text" id="contact-name" placeholder="name">
+    
+            <div class="projects-container">
+                <div class="preview-wrapper">
+                    <div class="title-preview">
+                        <div class="sirkol1"></div>
+                        <div class="sirkol1"></div>
+                        <div class="title">trackwatch</div>
+                    </div>
+                    <div class="info-preview"></div>
+                    <div class="button-preview">
+                        <a href="https://github.com/louisecalix/trackwatch" class="btn-resume">github</a>
                     </div>
                 </div>
-                <div class="contact-wrapper">
-                    <div class="contact-label">
-                        <input type="text" id="contact-email" placeholder="email">
+                <div class="preview-wrapper">
+                    <div class="title-preview">
+                        <div class="sirkol1"></div>
+                        <div class="sirkol1"></div>
+                        <div class="title">banking_system</div>
+                    </div>
+                    <div class="info-preview"></div>
+                    <div class="button-preview">
+                        <a href="https://github.com/louisecalix/banking_system" class="btn-resume">github</a>
                     </div>
                 </div>
-                <div class="contactmessage-wrapper">
-                    <div class="contact-label">
-                        <textarea id="message" rows="5" cols="50" placeholder="message"></textarea>
+                <div class="preview-wrapper">
+                    <div class="title-preview">
+                        <div class="sirkol1"></div>
+                        <div class="sirkol1"></div>
+                        <div class="title">portfolio</div>
+                    </div>
+                    <div class="info-preview"></div>
+                    <div class="button-preview">
+                        <a href="https://github.com/louisecalix/louisecalix.github.io" class="btn-resume">github</a>
                     </div>
                 </div>
-                <div id="contact-button"></div>
-                <div class="button-contact">
-                    <a href="#" class="btn-resume">send</a>
+                <div class="preview-wrapper">
+                    <div class="title-preview">
+                        <div class="sirkol1"></div>
+                        <div class="sirkol1"></div>
+                        <div class="title">trackwatch</div>
+                    </div>
+                    <div class="info-preview"></div>
+                    <div class="button-preview">
+                        <a href="https://github.com/louisecalix/trackwatch" class="btn-resume">github</a>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+
+
+        <section id="skills" class="skills container">
+            <div class="section-heading">
+                <h1>skills</h1>
+            </div>
+    
+            <div class="skill-container">
+                <div class="upperskill">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div class="lowerskill">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+
+
+        <section id="contact" class="contact container">
+            <div class="section-heading">
+                <h1>contact</h1>
+            </div>
+    
+            <div class="contact-container">
+                <div class="left-contact">
+                    <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894175/contact_bzkrj7.png" id="contact-picture">
+                </div>
+                <div class="right-contact">
+                    <div id="contact-header">
+                        <h1>get in touch</h1></div>
+                    <div class="contact-wrapper">
+                        <div class="contact-label">
+                            <input type="text" id="contact-name" placeholder="name">
+                        </div>
+                    </div>
+                    <div class="contact-wrapper">
+                        <div class="contact-label">
+                            <input type="text" id="contact-email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="contactmessage-wrapper">
+                        <div class="contact-label">
+                            <textarea id="message" rows="5" cols="50" placeholder="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="button-contact">
+                        <a href="#" class="btn-resume">send</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
