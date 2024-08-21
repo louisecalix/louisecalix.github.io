@@ -49,6 +49,7 @@
     }
 
     .nav-side {
+        /* border: 1px solid black; */
         display: flex;
         font-size: 16px;
         font-weight: 600;
@@ -61,6 +62,7 @@
     }
 
     .nav-button {
+        /* border: 1px solid black; */
         position: relative;
         display: block;
         font-family:'Inconsolata', monospace;
@@ -92,10 +94,10 @@
     }
     .nav-side {
         font-size: 18px;
-        gap: 30px;
+        /* gap: 30px; */
     }
     .header-container a {
-        margin-left: 33px;
+        /* margin-left: 33px; */
     }
 
 }
@@ -107,7 +109,7 @@
     }
     .nav-side {
         font-size: 20px;
-        gap: 50px;
+        gap: 10px;
     }
 
 }
@@ -116,21 +118,37 @@
     .container {
         max-width: 1280px;
     }
-    .header-container a {
-        padding-left: 60px;
-    }
-}
-
-@media screen and (min-width: 1540px) {
-    .container {
-        max-width: 1540px;
-    }
     .nav-side {
         font-size: 20px;
-        gap: 60px;
+        gap: 0;
+        margin-right: 15px;
+
     }
+
     .header-container a {
-        padding-left: 85px;
+        margin-left: 100px;
+    }
+
+
+}
+
+@media screen and (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+    .nav-side{
+        margin-right: 15px;
+        gap: 0;
+    }
+
+    .nav-button a {
+        margin: 0px;
+
+    }
+
+    .header-container a {
+        margin-left: 100px;
     }
 
 }
+
