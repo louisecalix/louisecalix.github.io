@@ -135,12 +135,16 @@ input {
     }
 
     .right-contact {
-        flex: 2; 
+        flex: 1; 
         max-width: 800px; 
         max-height: fit-content;
     }
 }
 
+/* @media screen and (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    } */
 @media screen and (min-width: 1540px) {
     .container {
         max-width: 1540px;
@@ -170,13 +174,13 @@ input {
     
     .left-contact{
         /* border: 1px solid pink; */
-        flex: 40%;
+        flex: 1;
     }
     .right-contact{
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        flex: 60%;
+        flex: 1;
         height: 450px;
         border-width: 4px 2px 3px 3px;
         border-top-left-radius: 0.22% 275px ;
@@ -254,3 +258,5 @@ input {
         padding-top: 10px;
     }
 }
+
+

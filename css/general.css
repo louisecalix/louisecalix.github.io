@@ -30,7 +30,7 @@ BODY {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-
+    margin-top: 100px;
     /* border: 2px solid rgba(255, 0, 0, 0.305); */
 }
 
@@ -57,7 +57,7 @@ BODY {
         background-color: rgb(243, 237, 222);
         background-size: cover;
         font-family: 'Inconsolata', monospace;
-        margin-top: 100px;
+        /* margin-top: 50px; */
     }
 }
 
