@@ -139,12 +139,14 @@ input {
         max-width: 800px; 
         max-height: fit-content;
     }
+
+    .button-contact {
+        padding-bottom: 0;
+    }
+
 }
 
-/* @media screen and (min-width: 1536px) {
-    .container {
-        max-width: 1536px;
-    } */
+
 @media screen and (min-width: 1540px) {
     .container {
         max-width: 1540px;
@@ -250,13 +252,15 @@ input {
     
     .button-contact {
         padding-left: 52px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     
     #contact-picture {
         height: 85%;
         padding-top: 10px;
     }
+
+
 }
 
 
