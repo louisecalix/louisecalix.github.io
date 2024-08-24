@@ -125,7 +125,12 @@
 
     #skills {
         height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        align-self: center;
     }
+
+
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {
