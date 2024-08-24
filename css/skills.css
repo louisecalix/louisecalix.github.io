@@ -122,6 +122,10 @@
         margin-right: 40px;
         gap: 15px;
     }
+
+    #skills {
+        height: calc(100vh - 80px);
+    }
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {
