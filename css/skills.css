@@ -1,5 +1,9 @@
 #skills {
     /* border: 1px solid black; */
+    display: flex;
+    /* height: calc(100vh - 80px); */
+    flex-direction: column;
+
 }
 
 .skill-container {
