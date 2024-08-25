@@ -109,6 +109,9 @@
         /* grid-template-columns: 1fr; */
         flex-direction: column;
         gap: 20px;
+        margin: 0;
+        padding: 0;
+        /* max-width: ; */
     }
 
     .preview-wrapper {

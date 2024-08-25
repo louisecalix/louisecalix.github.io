@@ -93,7 +93,46 @@ input {
     height: auto; 
 }
 
-/* Media Queries */
+@media screen and (max-width: 475px) {
+    .container {
+        min-width: 475px;
+
+    }
+
+    .right-contact {
+        max-width: 300px;
+    }
+
+    .contact-container {
+        max-inline-size: -webkit-fill-available;
+        max-inline-size: fill-available;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    .container {
+        min-width: 320px;
+
+    }
+
+    .right-contact {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        min-width: 320px;
+
+    }
+
+    .right-contact {
+        max-width: 450px;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
     #contact {
         height: calc(100vh - 80px);

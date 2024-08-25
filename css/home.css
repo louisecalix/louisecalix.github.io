@@ -24,6 +24,7 @@
 
 .h1-intro-title-container {
     /* border: 1px solid black; */
+    display: flex;
     font-size: 18px;
     height: auto;
     flex-wrap: wrap;
@@ -135,6 +136,14 @@ transform: translate3d(0, 2px, 0);
 box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
+@media screen and (max-width: 320px) {
+    .container {
+        min-width: 320px;
+        border: 2px solid black;
+
+    }
+}
+
 
 @media screen and (min-width: 475px) {
     .container {
@@ -178,6 +187,10 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
     .container {
         max-width: 768px;
     }
+/* 
+    #home {
+        height: calc(100vh - 80px);
+    } */
 
     .h1-intro-title-container{
         font-size: 22px;
