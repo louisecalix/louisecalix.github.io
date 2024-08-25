@@ -26,6 +26,7 @@
     background-color: rgba(205, 99, 67, 0.041);
     /* padding: 20px;  */
     box-sizing: border-box; 
+    /* min-width: fit-content; */
 }
 
 .info-top {
@@ -66,6 +67,16 @@
     padding-right: 10%;
 }
 
+@media screen and (max-width: 475px) {
+    .container {
+        min-width:  475px;
+    }
+
+    .info-container {
+        min-width: fit-content;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .container {
@@ -75,6 +86,7 @@
     #about {
         height: calc(100vh - 80px);
     }
+
 
 }
 
@@ -90,18 +102,5 @@
     .container {
         max-width: 1280px;
     }
-
-    /* .about-container h1 {
-        border: 1px solid black;
-        display: flex;
-        justify-content: flex-start;
-    } */
-
 }
 
-/* @media screen and (min-width: 1540px) {
-    .container {
-        max-width: 1540px;
-    }
-     
-} */
