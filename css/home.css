@@ -165,7 +165,9 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
     }
 
     .left-intro {
-        display: inline;
+        /* /* display: flex; */
+        flex-wrap: wrap;
+        align-content: center; */
     }
 
     .right-intro {
@@ -187,10 +189,6 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
     .container {
         max-width: 768px;
     }
-/* 
-    #home {
-        height: calc(100vh - 80px);
-    } */
 
     .h1-intro-title-container{
         font-size: 22px;
