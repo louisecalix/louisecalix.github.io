@@ -21,6 +21,7 @@ BODY, A, LI, UL {
 
 BODY {
     background-color: rgb(243, 237, 222);
+    min-height: 100vh;
 }
 
 IMG {
