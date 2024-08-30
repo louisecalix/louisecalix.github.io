@@ -37,14 +37,24 @@
 #name {
     /* border: 1px solid pink; */
     font-weight: bolder;
-    color:rgb(205, 100, 67);
+    /* color:rgb(205, 100, 67); */
+    /* color:rgb(206, 223, 159); */
+    color: rgb(232, 184, 109);
+    /* color: rgb(167, 198, 172); */
+    color: rgb(132, 168, 132);
     font-size: 70px;
-    text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     flex: auto;
-    padding-left: 12px;
+    /* padding-left: 12px; */
 }
 
-
+#title {
+    font-weight: bolder;
+    color:rgb(205, 100, 67);
+    /* color:  rgb(128, 128, 0); */
+    font-size: 60px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
 
 .intro-actions {
     /* border: 1px solid pink; */
