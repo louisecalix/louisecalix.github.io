@@ -39,6 +39,7 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .contact-wrapper {
@@ -134,11 +135,6 @@ input {
 
 
 @media screen and (min-width: 768px) {
-    #contact {
-        /* height: calc(100vh - 80px); */
-        
-    }
-
     .container {
         max-width: 768px;
     }
@@ -164,20 +160,12 @@ input {
 }
 
 @media screen and (min-width: 1024px) {
-    #contact {
-        /* height: calc(100vh - 80px); */
-    }
-
     .container {
         max-width: 1024px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    #contact {
-        /* height: calc(100vh - 80px); */
-    }
-
     .container {
         max-width: 1280px;
     }
@@ -192,8 +180,11 @@ input {
 
     .right-contact {
         flex: 1; 
-        max-width: 800px; 
+        max-width: 100%; 
         max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .button-contact {
@@ -204,9 +195,6 @@ input {
 
 
 @media screen and (min-width: 1540px) {
-    #contact {
-        /* height: calc(100vh - 80px); */
-    }
     .container {
         max-width: 1540px;
     }
@@ -321,5 +309,4 @@ input {
 
 
 }
-
 

@@ -90,8 +90,7 @@
 
 @media (min-width: 640px) and (max-width: 767px) {
     .circle {
-        height: 250px;
-        max-width: fit-content;
+        /* max-width: fit-content; */
     }
 }
 

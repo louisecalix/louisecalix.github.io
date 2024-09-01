@@ -1,4 +1,3 @@
-
 #home {
     height: calc(100vh - 80px);
     display: flex;
@@ -8,12 +7,11 @@
     display: none;
 }
 
-
 .intro-content {
+    /* border: 1px solid red; */
     display: flex;
-    flex-direction: row;
     align-self: center;
-    /* border: 1px solid black; */
+    max-width: fit-content;
 }
 
 .left-intro {
@@ -32,6 +30,7 @@
 .intro-title-header {
     /* border: 1px solid pink; */
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 #name {
@@ -54,6 +53,7 @@
     font-size: 60px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
+
 
 .intro-actions {
     /* border: 1px solid pink; */
@@ -145,20 +145,6 @@ transform: translate3d(0, 2px, 0);
 box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-@media screen and (max-width: 320px) {
-    .container {
-        min-width: 320px;
-        /* border: 2px solid black; */
-
-    }
-}
-
-
-@media screen and (min-width: 475px) {
-    .container {
-        max-width: 475px;
-    }
-}
 
 @media screen and (min-width: 640px) {
     .container {
@@ -277,8 +263,6 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 @media screen and (min-width: 1540px) {
     .container {
         max-width: 1540px;
-        /* padding-left: 5rem;
-        padding-right: 5rem; */
     }
     .h1-intro-title-container {
         font-size: 30px;
@@ -289,7 +273,6 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 
     #name {
         font-size: 95px;
-        /* padding: 5px; */
     }
 
     .intro-actions {
