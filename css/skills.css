@@ -3,7 +3,6 @@
     /* height: calc(100vh - 80px); */
     display: flex;
     flex-direction: column;
-
 }
 
 .skill-container {
@@ -89,8 +88,8 @@
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-    .circle {
-        /* max-width: fit-content; */
+    #skills {
+        /* height: auto;  */
     }
 }
 
