@@ -110,17 +110,6 @@ input {
     }
 }
 
-/* 
-@media screen and (max-width: 475px) {
-    .container {
-        min-width: 320px;
-
-    }
-
-    .right-contact {
-        max-width: 450px;
-    }
-} */
 
 @media screen and (max-width: 640px) {
     .container {
@@ -165,7 +154,7 @@ input {
     }
 
     #contact {
-        height: calc(100vh); 
+        /* height: calc(100vh);  */
     }
 }
 

@@ -67,8 +67,8 @@
     /* border: 1px solid pink; */
     display: flex;
     justify-content: flex-end; 
-    padding-right: 10%;
     padding: 20px;
+    padding-right: 10%;
 }
 
 
