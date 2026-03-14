@@ -7,7 +7,7 @@
     width: min(1240px, 100%);
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 42px;
     margin-inline: auto;
     padding: 0 20px;
@@ -49,9 +49,10 @@
 .title-preview {
     border: 3px solid var(--retro-black);
     border-radius: 14px 14px 0 0;
-    height: 56px;
+    min-height: 56px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 20px;
     justify-content: center;
     align-items: center;
@@ -70,7 +71,7 @@
 .title {
     flex: 1;
     padding-left: 30px;
-    font-size: 20px;
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.02em;
@@ -78,6 +79,8 @@
     text-align: center;
     padding-right: 18px;
     color: var(--retro-green-dark);
+    overflow-wrap: anywhere;
+    line-height: 1.1;
 }
 
 .button-preview {
@@ -124,17 +127,35 @@
 @media (max-width: 640px) {
     .projects-container {
         margin: 0;
-        padding: 0;
+        padding: 0 4px;
         gap: 24px;
+        grid-template-columns: 1fr;
     }
 
     .preview-wrapper {
         width: 100%;
         max-width: 100%;
+        padding: 22px 8px 12px;
     }
 
-    #project {
-        height: calc(100vh - 80px);
+    .title-preview {
+        min-height: 52px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+    }
+
+    .title {
+        padding-left: 14px;
+        padding-right: 10px;
+    }
+
+    .preview-description {
+        font-size: clamp(1rem, 4.1vw, 1.15rem);
+    }
+
+    #projects {
+        height: auto;
     }
 }
 

@@ -91,6 +91,26 @@ img {
     border-radius: 999px;
     padding: 8px 20px 10px;
     box-shadow: 5px 5px 0 rgba(18, 18, 18, 0.22);
+    font-size: clamp(2.1rem, 10vw, 4rem);
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin-bottom: 120px;
+    }
+
+    .section-heading {
+        padding: 10px 0 16px;
+    }
+
+    .section-heading h1 {
+        padding: 8px 14px 10px;
+        border-width: 3px;
+    }
 }
 
 @media (min-width: 640px) {

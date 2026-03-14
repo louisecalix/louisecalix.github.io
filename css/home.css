@@ -82,7 +82,7 @@
     color: var(--retro-orange);
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
-    font-size: clamp(58px, 8vw, 118px);
+    font-size: clamp(42px, 11vw, 118px);
     line-height: 0.92;
     text-shadow: 3px 3px 0 var(--retro-black);
 }
@@ -218,6 +218,23 @@
 }
 
 @media screen and (max-width: 639px) {
+    .intro-content {
+        padding: 28px 14px 40px;
+        border-radius: 22px;
+    }
+
+    .left-intro {
+        padding: 24px 10px 16px;
+    }
+
+    .h1-intro-title-container {
+        font-size: 16px;
+    }
+
+    .intro-title-header {
+        margin-bottom: 14px;
+    }
+
     .intro-content::before {
         height: 18px;
     }

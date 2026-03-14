@@ -97,6 +97,15 @@ nav li:first-child {
 }
 
 @media (max-width: 800px) {
+    nav a {
+        padding: 0 14px;
+    }
+
+    #logo {
+        margin-left: 0;
+        font-size: 22px;
+    }
+
     .hideOnMobile {
         display: none;
     }
