@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/github.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/contact.css">
 
@@ -19,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chakra+Petch:wght@400;500;700&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <canvas id="particle-bg" aria-hidden="true"></canvas>
     <nav>
         <ul class="sidebar">
             <li onclick="hideSidebar(event)">
@@ -31,6 +33,7 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
+            <li><a href="#github">github</a></li>
             <li><a href="#skills">skills</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -39,6 +42,7 @@
             <li class="hideOnMobile"><a href="#home">home</a></li>
             <li class="hideOnMobile"><a href="#about">about</a></li>
             <li class="hideOnMobile"><a href="#projects">projects</a></li>
+            <li class="hideOnMobile"><a href="#github">github</a></li>
             <li class="hideOnMobile"><a href="#skills">skills</a></li>
             <li class="hideOnMobile"><a href="#contact">contact</a></li>
             <li class="menu-button" onclick="showSidebar(event)">
@@ -55,33 +59,18 @@
     
     <section id="home" class="home container">
         <div class="intro-content">
-            <div class="left-intro">
-                <div class="h1-intro-title-container">
-                    <h1 class="intro-title-header">
-                        Hi, my name is <span id="name">ayheca.</span>
-                    </h1>
-                    <p class="intro-tagline">Computer Science Student</p>
-                </div>
-
+            <div class="home-copy">
+                <h1 class="home-title">
+                    <span class="home-title-small">Hi, I'm</span>
+                    <span id="name">AYHECA</span>
+                </h1>
+                <p class="intro-tagline">A Computer Science graduate passionate about building sleek web experiences.</p>
                 <div class="intro-actions">
-                    <a href="Ayheca_DeJesus_Resume.pdf" class="btn-resume" target="_blank">resume</a>
-                    <ul class="links-container">
-                        <li>
-                            <a href="https://github.com/louisecalix" class="btn-links" target="_blank">
-                                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1725328033/github-sign_idasfo.svg" class="link-icon">
-                            </a>
-                            <a href="https://profile.indeed.com/p/ayhecalouised-ryr8v6b" class="btn-links" target="_blank">
-                                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1725328033/linkedin_nkpblg.svg" class="link-icon">
-                            </a>
-                            <a href="https://github.com/louisecalix" class="btn-links" target="_blank">
-                                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1725328034/twitter-sign_m8sdab.svg" class="link-icon">
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="Ayheca_DeJesus_Resume.pdf" class="home-btn home-btn-solid" target="_blank">resume</a>
+                    <a href="https://github.com/louisecalix" class="home-btn" target="_blank" rel="noopener noreferrer">github</a>
+                    <a href="https://www.linkedin.com/in/ayheca-louise/" class="home-btn" target="_blank" rel="noopener noreferrer">linkedin</a>
+                    <a href="https://profile.indeed.com/p/ayhecalouised-ryr8v6b" class="home-btn" target="_blank" rel="noopener noreferrer">indeed</a>
                 </div>
-            </div>
-            <div class="right-intro">
-                <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1723894151/bg_helqwp.png" id="intro-photo">
             </div>
         </div>
     </section>
@@ -97,9 +86,11 @@
             </div>
             <div class="info-middle">
                 <p style="font-family: 'Inconsolata';">
-                    Hi there! I'm a passionate <strong>Computer Science student</strong> eager to explore the world of technology and problem-solving. With a strong foundation in <strong>web development, data science, and blockchain technology</strong>, I'm actively seeking an <strong>OJT (On-the-Job Training) opportunity</strong> to gain hands-on experience and contribute to real-world projects.</p>  
+                    Hi there! I'm a <strong>Computer Science graduate</strong> eager to explore the world of technology and problem-solving. 
+                    With a strong foundation in <strong>web development, Automation and IT operations & infrastructure</strong>, 
+                    I'm actively seeking a <strong>Job opportunity</strong> to gain hands-on experience and contribute to real-world projects.</p>  
                     <br><br>
-                    I'm excited to collaborate with innovative teams, apply my skills, and continue learning. If you have an internship opportunity or advice for someone starting in the tech industry, I'd love to connect!</p>
+                    I'm excited to collaborate with innovative teams, apply my skills, and continue learning. Let's connect!</p>
 
                     <br>
                     <!-- Hi There! I'm an aspiring IT professional with a passion for technology and problem-solving.
@@ -138,6 +129,76 @@
         </div>
 
         <div class="projects-container">
+
+            <div class="preview-wrapper">
+                <div class="title-preview">
+                    <div class="sirkol1"></div>
+                    <div class="sirkol1"></div>
+                    <div class="title">Handigo</div>
+                </div>
+                <div class="info-preview">
+                    <div class="preview-img">
+                        <img src="https://res.cloudinary.com/dg3aqfdm6/image/upload/v1776996768/Screenshot_2026-01-10_160858_gujrmu.png" 
+                         class="pimg">
+                    </div>
+                    <div class="preview-description">
+                        <p>
+                            A software-based gesture control platform that turns camera input into touchless commands
+                        </p>
+                    </div>
+                </div>
+                <div class="button-preview">
+                    <a href="https://github.com/Handigo-io/Handigo" class="btn-resume" target="_blank">github</a>
+                </div>
+            </div>
+
+
+
+            <div class="preview-wrapper">
+                <div class="title-preview">
+                    <div class="sirkol1"></div>
+                    <div class="sirkol1"></div>
+                    <div class="title">Jejemon Translator</div>
+                </div>
+                <div class="info-preview">
+                    <div class="preview-img">
+                        <img src="https://res.cloudinary.com/dg3aqfdm6/image/upload/v1776996459/Screenshot_2026-04-24_100719_emsboz.png" 
+                         class="pimg">
+                    </div>
+                    <div class="preview-description">
+                        <p>
+                            Jejemon-to-Filipino translator using rule-based NLP, lexicon matching, 
+                            and context-aware normalization 
+                        </p>
+                    </div>
+                </div>
+                <div class="button-preview">
+                    <a href="https://github.com/louisecalix/jejemon-translator" class="btn-resume" target="_blank">github</a>
+                </div>
+            </div>
+
+            <div class="preview-wrapper">
+                <div class="title-preview">
+                    <div class="sirkol1"></div>
+                    <div class="sirkol1"></div>
+                    <div class="title">Fakenews Detector</div>
+                </div>
+                <div class="info-preview">
+                    <div class="preview-img">
+                        <img src="https://res.cloudinary.com/dg3aqfdm6/image/upload/v1776996201/Screenshot_2026-04-24_100139_xgje2o.png" 
+                         class="pimg">
+                    </div>
+                    <div class="preview-description">
+                        <p>
+                            A machine learning model for detecting fake news articles. 
+                        </p>
+                    </div>
+                </div>
+                <div class="button-preview">
+                    <a href="https://github.com/louisecalix/fake-news-detector" class="btn-resume" target="_blank">github</a>
+                </div>
+            </div>
+
             <div class="preview-wrapper">
                 <div class="title-preview">
                     <div class="sirkol1"></div>
@@ -187,29 +248,6 @@
             </div>
 
 
-            <div class="preview-wrapper">
-                <div class="title-preview">
-                    <div class="sirkol1"></div>
-                    <div class="sirkol1"></div>
-                    <div class="title">Web News</div>
-                </div>
-                <div class="info-preview">
-                    <div class="preview-img">
-                        <img src="https://res.cloudinary.com/dzvd6o0og/image/upload/v1743077541/Screenshot_2024-09-20_105734_vilwpl.png" 
-                         class="pimg">
-                    </div>
-                    <div class="preview-description">
-                        <p>
-                            A web news clone that fetches news articles from an New York Times API.
-                            The clone displays the latest news articles and allows users to read the full article.
-                        </p>
-                    </div>
-                </div>
-                <div class="button-preview">
-                    <a href="https://github.com/louisecalix/nytimes" class="btn-resume" target="_blank">github</a>
-                </div>
-            </div>
-
 
             <!-- <div class="preview-wrapper">
                 <div class="title-preview">
@@ -255,7 +293,7 @@
                 <div class="title-preview">
                     <div class="sirkol1"></div>
                     <div class="sirkol1"></div>
-                    <div class="title">eCommerce System</div>
+                    <div class="title">Khloris</div>
                 </div>
                 <div class="info-preview">
                     <div class="preview-img">
@@ -271,6 +309,39 @@
                 </div>
             </div>
 
+    </section>
+
+
+    <section id="github" class="github container">
+        <div class="section-heading">
+            <h1>github</h1>
+        </div>
+
+        <div class="github-grid">
+            <article class="github-card profile-card">
+                <h2>profile snapshot</h2>
+                <p id="gh-profile-loading" class="github-note">loading profile...</p>
+                <div id="gh-profile" class="profile-content" hidden>
+                    <img id="gh-avatar" src="" alt="GitHub profile avatar" class="gh-avatar">
+                    <div class="gh-profile-meta">
+                        <h3 id="gh-name"></h3>
+                        <a id="gh-username" href="https://github.com/louisecalix" target="_blank" rel="noopener noreferrer">@louisecalix</a>
+                        <p id="gh-bio"></p>
+                    </div>
+                    <div class="gh-stats">
+                        <p><strong id="gh-repos">0</strong> repos</p>
+                        <p><strong id="gh-followers">0</strong> followers</p>
+                        <p><strong id="gh-following">0</strong> following</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="github-card activity-card">
+                <h2>recent activity</h2>
+                <p id="gh-activity-loading" class="github-note">loading latest public events...</p>
+                <ul id="gh-activity-list" hidden></ul>
+            </article>
+        </div>
     </section>
 
 
@@ -354,6 +425,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             let lastScrollTop = 0;
             const nav = document.querySelector('nav');
+            const username = 'louisecalix';
 
             window.addEventListener('scroll', function() {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -366,7 +438,233 @@
 
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
             }, false);
+
+            loadGitHubSection(username);
+            initParticleBackground();
         });
+
+        function buildActivityText(event) {
+            const repo = event.repo && event.repo.name ? event.repo.name : 'a repository';
+
+            if (event.type === 'PushEvent') {
+                const commitCount = event.payload && event.payload.size ? event.payload.size : 0;
+                return `Pushed ${commitCount} commit${commitCount === 1 ? '' : 's'} to ${repo}`;
+            }
+
+            if (event.type === 'CreateEvent') {
+                const refType = event.payload && event.payload.ref_type ? event.payload.ref_type : 'item';
+                return `Created a new ${refType} in ${repo}`;
+            }
+
+            if (event.type === 'PullRequestEvent') {
+                const action = event.payload && event.payload.action ? event.payload.action : 'updated';
+                return `${action.charAt(0).toUpperCase() + action.slice(1)} a pull request in ${repo}`;
+            }
+
+            if (event.type === 'IssuesEvent') {
+                const action = event.payload && event.payload.action ? event.payload.action : 'updated';
+                return `${action.charAt(0).toUpperCase() + action.slice(1)} an issue in ${repo}`;
+            }
+
+            return `${event.type.replace('Event', '')} activity in ${repo}`;
+        }
+
+        async function loadGitHubSection(username) {
+            const profileLoading = document.getElementById('gh-profile-loading');
+            const activityLoading = document.getElementById('gh-activity-loading');
+            const profile = document.getElementById('gh-profile');
+            const activityList = document.getElementById('gh-activity-list');
+
+            try {
+                const [profileResponse, activityResponse] = await Promise.all([
+                    fetch(`https://api.github.com/users/${username}`),
+                    fetch(`https://api.github.com/users/${username}/events/public?per_page=5`)
+                ]);
+
+                if (!profileResponse.ok || !activityResponse.ok) {
+                    throw new Error('GitHub API request failed.');
+                }
+
+                const profileData = await profileResponse.json();
+                const activityData = await activityResponse.json();
+
+                document.getElementById('gh-avatar').src = profileData.avatar_url;
+                document.getElementById('gh-name').textContent = profileData.name || username;
+                document.getElementById('gh-username').textContent = `@${profileData.login}`;
+                document.getElementById('gh-username').href = profileData.html_url;
+                document.getElementById('gh-bio').textContent = profileData.bio || 'No bio added yet.';
+                document.getElementById('gh-repos').textContent = profileData.public_repos || 0;
+                document.getElementById('gh-followers').textContent = profileData.followers || 0;
+                document.getElementById('gh-following').textContent = profileData.following || 0;
+
+                profile.hidden = false;
+                profileLoading.hidden = true;
+
+                activityList.innerHTML = '';
+
+                if (!Array.isArray(activityData) || activityData.length === 0) {
+                    const emptyItem = document.createElement('li');
+                    emptyItem.textContent = 'No recent public activity found.';
+                    activityList.appendChild(emptyItem);
+                } else {
+                    activityData.forEach((event) => {
+                        const item = document.createElement('li');
+                        const eventDate = new Date(event.created_at).toLocaleDateString();
+                        item.textContent = `${buildActivityText(event)} (${eventDate})`;
+                        activityList.appendChild(item);
+                    });
+                }
+
+                activityList.hidden = false;
+                activityLoading.hidden = true;
+            } catch (error) {
+                profileLoading.textContent = 'Unable to load GitHub profile right now.';
+                activityLoading.textContent = 'Unable to load GitHub activity right now.';
+                activityList.hidden = true;
+            }
+        }
+
+        function initParticleBackground() {
+            const canvas = document.getElementById('particle-bg');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+
+            const dpr = window.devicePixelRatio || 1;
+            const pointer = { x: -9999, y: -9999, active: false };
+            const particles = [];
+
+            const config = {
+                baseCount: window.innerWidth < 640 ? 52 : 95,
+                maxSpeed: 0.2,
+                radiusMin: 1,
+                radiusMax: 2.8,
+                linkDistance: 130,
+                cursorDistance: 115,
+                cursorForce: 0.00045
+            };
+
+            function resizeCanvas() {
+                canvas.width = Math.floor(window.innerWidth * dpr);
+                canvas.height = Math.floor(window.innerHeight * dpr);
+                canvas.style.width = `${window.innerWidth}px`;
+                canvas.style.height = `${window.innerHeight}px`;
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                resetParticles();
+            }
+
+            function resetParticles() {
+                particles.length = 0;
+                for (let i = 0; i < config.baseCount; i += 1) {
+                    particles.push({
+                        x: Math.random() * window.innerWidth,
+                        y: Math.random() * window.innerHeight,
+                        vx: (Math.random() - 0.5) * config.maxSpeed,
+                        vy: (Math.random() - 0.5) * config.maxSpeed,
+                        r: config.radiusMin + Math.random() * (config.radiusMax - config.radiusMin)
+                    });
+                }
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+                for (let i = 0; i < particles.length; i += 1) {
+                    const p = particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    if (p.x <= 0 || p.x >= window.innerWidth) p.vx *= -1;
+                    if (p.y <= 0 || p.y >= window.innerHeight) p.vy *= -1;
+
+                    if (pointer.active) {
+                        const dx = pointer.x - p.x;
+                        const dy = pointer.y - p.y;
+                        const dist = Math.hypot(dx, dy);
+                        if (dist < config.cursorDistance && dist > 0.001) {
+                            const force = (1 - dist / config.cursorDistance) * config.cursorForce;
+                            p.vx += dx * force;
+                            p.vy += dy * force;
+                            p.vx = Math.max(-0.9, Math.min(0.9, p.vx));
+                            p.vy = Math.max(-0.9, Math.min(0.9, p.vy));
+                        }
+                    }
+
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(220, 236, 255, 0.72)';
+                    ctx.fill();
+                }
+
+                for (let i = 0; i < particles.length; i += 1) {
+                    for (let j = i + 1; j < particles.length; j += 1) {
+                        const a = particles[i];
+                        const b = particles[j];
+                        const dx = a.x - b.x;
+                        const dy = a.y - b.y;
+                        const distance = Math.hypot(dx, dy);
+
+                        if (distance < config.linkDistance) {
+                            const alpha = 1 - distance / config.linkDistance;
+                            ctx.beginPath();
+                            ctx.moveTo(a.x, a.y);
+                            ctx.lineTo(b.x, b.y);
+                            ctx.strokeStyle = `rgba(173, 198, 223, ${alpha * 0.26})`;
+                            ctx.lineWidth = 1;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                if (pointer.active) {
+                    for (let i = 0; i < particles.length; i += 1) {
+                        const p = particles[i];
+                        const dx = p.x - pointer.x;
+                        const dy = p.y - pointer.y;
+                        const dist = Math.hypot(dx, dy);
+
+                        if (dist < config.cursorDistance * 0.62) {
+                            const alpha = 1 - dist / config.cursorDistance;
+                            ctx.beginPath();
+                            ctx.moveTo(pointer.x, pointer.y);
+                            ctx.lineTo(p.x, p.y);
+                            ctx.strokeStyle = `rgba(164, 238, 255, ${alpha * 0.17})`;
+                            ctx.lineWidth = 1;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                window.requestAnimationFrame(draw);
+            }
+
+            window.addEventListener('mousemove', (event) => {
+                pointer.x = event.clientX;
+                pointer.y = event.clientY;
+                pointer.active = true;
+            });
+
+            window.addEventListener('touchmove', (event) => {
+                if (!event.touches || event.touches.length === 0) return;
+                pointer.x = event.touches[0].clientX;
+                pointer.y = event.touches[0].clientY;
+                pointer.active = true;
+            }, { passive: true });
+
+            window.addEventListener('mouseleave', () => {
+                pointer.active = false;
+            });
+
+            window.addEventListener('touchend', () => {
+                pointer.active = false;
+            });
+
+            window.addEventListener('resize', resizeCanvas);
+
+            resizeCanvas();
+            draw();
+        }
     </script>
 </body>
 </html>

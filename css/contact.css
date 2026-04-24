@@ -10,25 +10,13 @@
     margin-inline: auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
     align-items: center;
-    padding: 34px 24px 24px;
-    border: 4px solid var(--retro-black);
-    border-radius: 28px;
-    box-shadow: 10px 10px 0 rgba(18, 18, 18, 0.2);
-    background: var(--retro-cream);
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 24px;
-    background: var(--retro-orange);
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: linear-gradient(165deg, var(--panel), var(--panel-strong));
+    box-shadow: 0 0 24px rgba(33, 128, 160, 0.18);
 }
 
 .left-contact {
@@ -36,51 +24,30 @@
 }
 
 .right-contact {
-    border: 3px solid var(--retro-black);
-    border-radius: 22px;
-    box-shadow: 9px 10px 0 rgba(18, 18, 18, 0.2);
-    background: var(--retro-green-dark);
     width: 100%;
-    max-width: 620px;
+    max-width: 680px;
     margin-inline: auto;
-    position: relative;
-    overflow: hidden;
-    padding: 12px;
-}
-
-.right-contact::before {
-    content: none;
+    border: 1px solid var(--line-soft);
+    border-radius: 16px;
+    background: rgba(7, 17, 30, 0.76);
+    padding: 14px;
 }
 
 #contact-header {
-    border-bottom: 3px solid var(--retro-black);
     font-family: 'Archivo Black', sans-serif;
     text-transform: uppercase;
-    font-size: 22px;
-    letter-spacing: 0.04em;
+    font-size: clamp(1.3rem, 4vw, 1.9rem);
+    letter-spacing: 0.05em;
     display: flex;
     justify-content: center;
-    background: var(--retro-cream);
-    border-radius: 16px 16px 0 0;
-    padding: 18px 14px 16px;
+    color: var(--text);
+    border-bottom: 1px solid var(--line-soft);
+    padding: 12px 8px 14px;
 }
 
 .contact-wrapper,
 .contactmessage-wrapper {
-    margin-left: 18px;
-    margin-right: 18px;
-}
-
-.contact-wrapper {
-    margin-top: 14px;
-}
-
-.contactmessage-wrapper {
-    margin-top: 10px;
-}
-
-#contact-button {
-    flex: 1;
+    margin: 12px;
 }
 
 .contact-label {
@@ -90,84 +57,77 @@
 
 input,
 #message {
-    border-radius: 12px;
-    border: 2px solid var(--retro-black);
-    background-color: rgba(239, 232, 211, 0.96);
-    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(93, 231, 255, 0.4);
+    background: rgba(3, 10, 19, 0.9);
+    font-size: 1rem;
     box-sizing: border-box;
     width: 100%;
-    color: var(--retro-ink);
+    color: var(--text);
 }
 
 input {
-    height: 44px;
-    padding: 0 14px;
+    height: 42px;
+    padding: 0 12px;
 }
 
 #message {
     min-height: 140px;
-    padding: 12px 14px;
+    padding: 12px;
     resize: vertical;
 }
 
 input::placeholder,
 #message::placeholder {
-    color: #57616a;
+    color: #7f95a8;
     letter-spacing: 0.02em;
 }
 
 .button-contact {
-    padding: 20px 0 20px;
+    padding: 8px 0 14px;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .button-contact .btn-resume {
-    background-color: var(--retro-orange);
-    color: #fff;
-    padding-inline: 30px;
-    font-size: 1.22rem;
+    min-width: 180px;
 }
 
 #contact-picture {
     width: 100%;
     height: auto;
-    border: 3px solid var(--retro-black);
-    border-radius: 20px;
-    background: rgba(239, 232, 211, 1);
-    padding: 12px;
-    box-shadow: 8px 9px 0 rgba(18, 18, 18, 0.2);
-    filter: none;
+    border: 1px solid var(--line-soft);
+    border-radius: 14px;
+    background: rgba(3, 11, 20, 0.8);
+    padding: 8px;
 }
 
 @media screen and (max-width: 640px) {
     .contact-container {
-        padding: 30px 10px 14px;
+        padding: 12px;
     }
 
     .contact-wrapper,
     .contactmessage-wrapper {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
 @media screen and (min-width: 860px) {
     .contact-container {
         grid-template-columns: minmax(260px, 0.95fr) minmax(420px, 1fr);
-        gap: 38px;
+        gap: 24px;
         align-items: stretch;
     }
 
     .left-contact {
         display: block;
-        position: relative;
-        height: 100%;
-        background: var(--retro-green-dark);
-        border: 3px solid var(--retro-black);
-        border-radius: 22px;
-        padding: 16px;
+        border: 1px solid var(--line-soft);
+        border-radius: 16px;
+        background: rgba(7, 17, 30, 0.66);
+        padding: 10px;
     }
 
     .right-contact {

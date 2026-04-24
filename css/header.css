@@ -1,22 +1,13 @@
 nav {
-    border-bottom: 4px solid var(--retro-black);
-    background-color: var(--retro-green-dark);
-    box-shadow: 0 6px 0 rgba(18, 18, 18, 0.2);
+    border-bottom: 1px solid rgba(93, 231, 255, 0.26);
+    background: rgba(2, 8, 16, 0.78);
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
+    left: 0;
     top: 0;
     transition: top 0.3s;
     z-index: 20;
-}
-
-nav::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 13px;
-    background: var(--retro-orange);
 }
 
 nav.hidden {
@@ -24,13 +15,13 @@ nav.hidden {
 }
 
 nav ul {
-    width: 100%;
+    width: min(1240px, 100%);
+    margin-inline: auto;
+    padding-inline: clamp(10px, 2vw, 20px);
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
@@ -39,20 +30,20 @@ nav li {
 
 nav a {
     height: 100%;
-    padding: 0 22px;
+    padding: 0 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: var(--retro-cream);
+    color: #dbefff;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 0.95rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: 0.25s ease;
+    letter-spacing: 0.08em;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: var(--retro-lime);
+    color: var(--accent);
 }
 
 nav li:first-child {
@@ -61,10 +52,10 @@ nav li:first-child {
 
 #logo {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 24px;
-    color: var(--retro-cream);
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
-    margin-left: 20%;
+    font-size: 1.45rem;
+    color: #eaf7ff;
+    text-shadow: 0 0 14px rgba(93, 231, 255, 0.3);
+    margin-left: 0;
 }
 
 .sidebar {
@@ -73,10 +64,10 @@ nav li:first-child {
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: rgba(47, 92, 51, 0.96);
-    backdrop-filter: blur(3px);
-    border-left: 4px solid var(--retro-cream);
-    box-shadow: -10px 0 16px rgba(0, 0, 0, 0.18);
+    background: rgba(5, 14, 27, 0.95);
+    backdrop-filter: blur(12px);
+    border-left: 1px solid rgba(93, 231, 255, 0.3);
+    box-shadow: -12px 0 28px rgba(0, 0, 0, 0.45);
     list-style: none;
     display: none;
     flex-direction: column;
@@ -84,26 +75,35 @@ nav li:first-child {
     justify-content: flex-start;
 }
 
-.sidebar li {
+.sidebar li,
+.sidebar a {
     width: 100%;
 }
 
 .sidebar a {
-    width: 100%;
+    padding-left: 20px;
 }
 
 .menu-button {
     display: none;
 }
 
+nav svg path {
+    fill: #dbefff;
+}
+
 @media (max-width: 800px) {
+    nav ul {
+        padding-inline: 8px;
+    }
+
     nav a {
-        padding: 0 14px;
+        padding: 0 10px;
     }
 
     #logo {
         margin-left: 0;
-        font-size: 22px;
+        font-size: 1.3rem;
     }
 
     .hideOnMobile {
@@ -118,15 +118,5 @@ nav li:first-child {
 @media (max-width: 400px) {
     .sidebar {
         width: 100%;
-    }
-}
-
-@media (min-width: 1280px) {
-    #logo {
-        font-size: 30px;
-    }
-
-    nav a {
-        font-size: 19px;
     }
 }

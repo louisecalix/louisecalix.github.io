@@ -1,0 +1,123 @@
+#github {
+    height: auto;
+}
+
+.github-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: 22px;
+    width: min(1240px, 100%);
+    margin-inline: auto;
+}
+
+.github-card {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: linear-gradient(160deg, var(--panel), var(--panel-strong));
+    box-shadow: 0 0 20px rgba(34, 129, 158, 0.16);
+    padding: 20px;
+    animation: riseIn 0.45s ease-out both;
+}
+
+.github-card h2 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    color: var(--text);
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    align-items: start;
+}
+
+.gh-avatar {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1px solid rgba(93, 231, 255, 0.48);
+    object-fit: cover;
+}
+
+.gh-profile-meta h3 {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+#gh-username {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#gh-username:hover {
+    text-decoration: underline;
+}
+
+#gh-bio {
+    margin-top: 8px;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.gh-stats {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.gh-stats p {
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    background: rgba(6, 18, 31, 0.72);
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.gh-stats strong {
+    color: var(--text);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.github-note {
+    color: var(--muted);
+    font-family: 'Inconsolata', monospace;
+}
+
+#gh-activity-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+#gh-activity-list li {
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    background: rgba(6, 18, 31, 0.75);
+    color: var(--muted);
+    padding: 10px 12px;
+    line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+    .github-grid {
+        gap: 14px;
+    }
+
+    .github-card {
+        padding: 16px 12px;
+    }
+
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+}
