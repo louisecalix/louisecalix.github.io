@@ -126,6 +126,21 @@
     background: linear-gradient(180deg, #85f0ff 0, #52d2ff 100%);
 }
 
+.home-btn-icon {
+    width: 46px;
+    height: 46px;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 @media (max-width: 640px) {
     #home {
         min-height: calc(100vh - 84px);
@@ -159,5 +174,10 @@
     .home-btn {
         width: 100%;
         max-width: 260px;
+    }
+
+    .home-btn-icon {
+        width: 46px;
+        max-width: 46px;
     }
 }

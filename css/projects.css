@@ -1,6 +1,8 @@
 #projects {
     height: auto;
     overflow-x: hidden;
+    overflow-y: visible;
+    max-height: none;
 }
 
 .projects-container {
@@ -10,6 +12,8 @@
     gap: 28px;
     margin-inline: auto;
     padding: 0 6px;
+    overflow-y: visible;
+    max-height: none;
 }
 
 .preview-wrapper {
@@ -34,7 +38,7 @@
 }
 
 .title-preview {
-    border: 1px solid var(--line-soft);
+    border: none;
     border-radius: 12px;
     min-height: 54px;
     display: flex;
@@ -61,7 +65,7 @@
 }
 
 .info-preview {
-    border: 1px solid var(--line-soft);
+    border: none;
     border-radius: 12px;
     background: rgba(7, 17, 30, 0.75);
     padding: 12px;
